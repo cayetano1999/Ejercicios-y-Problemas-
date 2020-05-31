@@ -1,0 +1,11 @@
+C:\Users\josue\source\repos\ProblemReportAlgoritm\Algoritmos\bin\Debug\netcoreapp3.1\Algoritmos.exe
+C:\Users\josue\source\repos\ProblemReportAlgoritm\Algoritmos\bin\Debug\netcoreapp3.1\Algoritmos.deps.json
+C:\Users\josue\source\repos\ProblemReportAlgoritm\Algoritmos\bin\Debug\netcoreapp3.1\Algoritmos.runtimeconfig.json
+C:\Users\josue\source\repos\ProblemReportAlgoritm\Algoritmos\bin\Debug\netcoreapp3.1\Algoritmos.runtimeconfig.dev.json
+C:\Users\josue\source\repos\ProblemReportAlgoritm\Algoritmos\bin\Debug\netcoreapp3.1\Algoritmos.dll
+C:\Users\josue\source\repos\ProblemReportAlgoritm\Algoritmos\bin\Debug\netcoreapp3.1\Algoritmos.pdb
+C:\Users\josue\source\repos\ProblemReportAlgoritm\Algoritmos\obj\Debug\netcoreapp3.1\Algoritmos.csprojAssemblyReference.cache
+C:\Users\josue\source\repos\ProblemReportAlgoritm\Algoritmos\obj\Debug\netcoreapp3.1\Algoritmos.AssemblyInfoInputs.cache
+C:\Users\josue\source\repos\ProblemReportAlgoritm\Algoritmos\obj\Debug\netcoreapp3.1\Algoritmos.AssemblyInfo.cs
+C:\Users\josue\source\repos\ProblemReportAlgoritm\Algoritmos\obj\Debug\netcoreapp3.1\Algoritmos.dll
+C:\Users\josue\source\repos\ProblemReportAlgoritm\Algoritmos\obj\Debug\netcoreapp3.1\Algoritmos.pdb
