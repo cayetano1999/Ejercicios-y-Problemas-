@@ -9,20 +9,30 @@ namespace Algoritmos
     {
         public static void Main(string[] args)
         {
-            var numbersrandom = Utility.GenerateNumbers(1, 1000);
             var modification = new Modifications();
+            var numbersrandom = Utility.GenerateNumbers(1, 1000);
             var option = "";
 
             Console.WriteLine("------------------[Analisis y Diseño de Algoritmos]------------------");
-            for (int i = 1; i < 7; i++)
+            for (int i = 0; i < 6; i++)
             {
-                Console.WriteLine($"{i}. Modificacion {i}");
+                if (i == 0)
+                {
+                    Console.WriteLine("0. Problema Inicial");
+                }
+                else
+                {
+                    Console.WriteLine($"{i}. Modificacion {i}");
+                }
             }
             Console.WriteLine("Digite una opcion: => ");
             option = Console.ReadLine();
-
             switch (option)
             {
+                case "0":
+                    modification.InitalProblem(numbersrandom);
+                    break;
+
                 case "1" :
                     modification.ModificationOne(numbersrandom);
                     break;
@@ -41,6 +51,9 @@ namespace Algoritmos
 
                 case "5":
                     modification.ModificationFive(numbersrandom);
+                    break;
+                case "6":
+                    modification.ModificationSix(numbersrandom);
                     break;
 
 
@@ -231,10 +244,10 @@ namespace Algoritmos
             var mitad = values.Count + 1;
             mitad /= 2;
 
-            //promedio de la mitad de valores
-            var mitaddevalores = values.Take(mitad).ToList();
-            var sum = Utility.GetSum(mitaddevalores); // obteniendo la mitad de la antidad de los valores 
-            var promedio = sum / mitad;
+            var mitaddevalores = values.Take(mitad).ToList(); // obteniendo la mitad de la antidad de los valores 
+            var sum = Utility.GetSum(mitaddevalores); //sumando los valores
+            var promedio = sum / mitad; //promedio de la mitad de valores
+
 
             if (totalimpares > promedio)
             {
@@ -341,8 +354,8 @@ namespace Algoritmos
                     //sumando solo los cuadrados perfectos y pares;
                     sum += item;
                 }
-
                 promedio = sum / cantidad;
+
 
                 //tomando los 100 primeros pares y multiplos de 5;
                 var paresymultiplos = new List<int>();
@@ -372,9 +385,29 @@ namespace Algoritmos
                 }
             }
 
-
             Utility.ClearPromgram();
 
+        }
+
+        public void InitalProblem(List<int> numbersrandom)
+        {
+            Console.Clear();
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("A un sistema se le introducirá un conjunto de 1000 números enteros(se pueden generar aleatoriamente para las pruebas) \n   Se desea obtener la suma y el producto de dichos números y mostrar por pantalla de manera ordenada los valores introducidos\n y el resultado de la suma y el producto de los mismos.");
+            Console.WriteLine("\n");
+            var ordenados = numbersrandom.OrderByDescending(x => x).ToList();
+            var sumatotal = Utility.GetSum(ordenados);
+            var multi = Utility.GetMultiplicaction(ordenados);
+
+            Console.WriteLine($"\nLa suma total es: {sumatotal} ");
+            Console.WriteLine($"\nLa multiplicacion total es: {multi} ");
+            Console.WriteLine("Numeros ordenados...");
+            foreach (var item in ordenados)
+            {
+                Console.WriteLine(item);
+            }
+
+            Utility.ClearPromgram();
 
         }
     }
